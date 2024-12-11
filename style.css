@@ -1,0 +1,178 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS';
+}
+
+body{
+    background: #DBEEFF;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.container{
+    padding: 40px;
+    width:380px; 
+    background: white;
+    border-radius:7px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+.container .token-box{
+    height:45px;
+    width:100%; 
+    border-radius: 30px;
+    background: #f3eee3;
+    border: 1px solid grey;
+    font-weight: bold;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container .token-box h2{
+    font-size:30px;
+    color:grey;
+    font-weight:400px;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.P{
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container .checkboxes-box{
+    padding:1px;
+    margin-top:15px;
+}
+
+.container .check-btn{
+    padding-bottom: 0px;
+}
+
+.container .checkboxes-box div{
+    height:35px;
+    width:100%;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.container .checkboxes-box  div span{
+    padding-left: 20px;
+} 
+
+.container .checkboxes-box div input{
+    height:18px; 
+    width: 18px;
+    border:1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+
+.container .checkboxes-box div input ::before{
+    content: "\f00c";
+    position: absolute;
+    font-family: FontAwesome; 
+    color: white;
+    font-size:11px;
+    display:none;
+}
+
+.container .checkboxes-box div input:checked{
+    background: #FF6948;
+    border-color:#FF6948;
+}
+
+.container .checkboxes-box div input:checked::before{
+    display: block;
+}
+
+.container .token-length{
+    padding: 2px;
+    padding-left: 35px;
+}
+
+.container .token-length h3{
+    font-size: 15px;
+    color: grey;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.container .token-length input{
+    -webkit-appearance:none;
+    height: 3px;
+    width: 70%;
+    background: lightgrey;
+    position: relative;
+    top:-3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.container .token-length input::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    background: #FF6948;
+    cursor: pointer;
+}
+
+.container .token-length .length-value{
+    height:30px;
+    width: 55px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid grey;
+    position: absolute;
+    right: 55px;
+    margin-top: -25px;
+}
+
+.container .generate-btn, .ready-btn, .check-btn, .again-btn{
+    all: unset;
+    height: 50px;
+    width: 260px;
+    background: #FF6948;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}    
+
+::selection{
+    background-color: rgb(100, 149, 237, 0.8);
+    color: white;
+}

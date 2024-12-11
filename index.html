@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorize</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6133/6133741.png">
+
+</head>
+<body>
+    <h1>MEMORIZE</h1>
+<div class="container">
+
+    <div class="token-box">
+        <h3 class="token"></h3>
+    </div>
+
+    <div class="checkboxes-box">
+        <div class="lowercase">
+            <input type="checkbox" id="lowercase">
+            <span>Letras</span>
+        </div>
+        <div class="numbers">
+            <input type="checkbox" id="numbers">
+            <span>Números</span>
+        </div>
+    </div>
+
+    <div class="token-length">
+        <h2>Tamanho</h2>
+        <input type="range" min="4" max="10" value="6" oninput="tokenLenght()">
+        <div class="length-value">6</div>
+    </div>
+    <br>
+    <button class="generate-btn">Gerar token</button>
+    <a class="ready-btn" href="play.html">Pronto?</a>
+
+</div>
+<script src="memorize.js"></script>
+</body>
+</html>
